@@ -6,3 +6,13 @@
   <link rel="stylesheet" href="./style.css">
 
 </head>
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="background"></div>
+    <a target="_top" id="twitter" href="https://twitter.com/malik__mateen"><i class="fab fa-twitter"></i></a>
+    <div id="container" :data-show='show_device'>
+      <div class="iphone-container" @click="toggleDevice('iphone')">
+        <div class='iphone'>
+          <div class="top-notch"></div>
+        </div>
+        
