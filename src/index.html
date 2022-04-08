@@ -26,3 +26,29 @@
           </div>
         </div>
       </div>
+      <div class="galaxy-container" @click="toggleDevice('galaxy')">
+        <div class="galaxy">
+          <div class="camera"></div>
+        </div>
+        <div class="title">Samsung Galaxy S21 Ultra</div>
+        <div class="features">
+          <div class="summary">
+            <div v-for="(item, key) in galaxy.summary" :class='key'>
+              <div class="summary-title">
+                {{item.title}}
+              </div>
+              <div class="summary-value">{{item.value}}</div>
+            </div>
+          </div>
+          <div class="summary-large">
+            <div v-for="(item, key) in galaxy.summary_large" :class='key'>
+              <div class="summary-large-title">
+                {{item.title}}
+              </div>
+              <div class="summary-large-value">{{item.value}}</div>
+              <div class="summary-large-subvalue">{{item.subvalue}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
